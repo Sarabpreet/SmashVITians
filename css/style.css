@@ -10,5 +10,25 @@ body{
 /*font-family: 'Press Start 2P', sans-serif;*/
 
 }
+.info {
+  
+  display: none;
+  
+}
 
-
+.box {
+  margin: 20px auto;
+  display: block;
+  width:50%;
+  height:400px;
+  background: url('../images/pattern.png');
+  padding:2%;
+  text-transform:uppercase;
+}
+.box h3 {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 30px;
+  
+  
+}

@@ -42,6 +42,7 @@ else {
 			else {
 
 				$form=true;
+				$flag_score=false;
 			}
 
 			
