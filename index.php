@@ -1,6 +1,7 @@
 <?php 
 
 $clientScore=0;
+$flag_score=false;
 
 //if there is a post variable, dont show form.php else show. 
 //if there is session variable, dont set session variable else set variable

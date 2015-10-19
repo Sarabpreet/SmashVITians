@@ -10,6 +10,27 @@ body{
 /*font-family: 'Press Start 2P', sans-serif;*/
 
 }
+
+input{
+
+display: block;
+width: 40%;
+height: 34px;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857;
+color: #555;
+background-color: #FFF;
+background-image: none;
+border: 1px solid #CCC;
+border-radius: 4px;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+margin: 20px auto;
+/*transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+*/
+}
+
+
 .info {
   
   display: none;
@@ -17,18 +38,41 @@ body{
 }
 
 .box {
-  margin: 20px auto;
+  margin: 50px auto;
   display: block;
   width:50%;
-  height:400px;
+  height:500px;
   background: url('../images/pattern.png');
   padding:2%;
   text-transform:uppercase;
+    text-align:center;
+	color:#fb792a;
+    -webkit-box-shadow: 0 0 0 20px #168BD9;
+box-shadow: 0 0 0 20px #168BD9;
 }
 .box h3 {
-  margin-top: 60px;
-  text-align: center;
+  margin: 60px 0px;
+	text-shadow: 2px 2px 0 #42BAFF;
   font-size: 30px;
+}
+
+.box .options {
+  width: 60%;
+  margin: 20px auto;
+}
+
+
+.box .one {
+  
+  float:left;
+  cursor: pointer;
+}
+
+
+
+.box .two {
+  float:right;
+  cursor: pointer;
   
   
 }
