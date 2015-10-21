@@ -4,14 +4,15 @@
 	<meta charset="UTF-8">
 	<title>Smash VITians</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
 </head>
 <body>
 	
-<!-- 
+ 
 
 	<link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
 
--->
+
 
 
 <?php if($flag_score){
@@ -32,8 +33,10 @@
 
 <div class="options">
 	
-	<div class="one"><h5>Random Batch Mates</h5><div class="random"></div></div>
-	<div class="two"><h5>A known VITian</h5><div class="random"></div></div>
+	<div class="one"><i class="fa fa-users"></i>
+<h5>Random Batch Mates</h5><div class="random"></div></div>
+
+	<div class="two"><i class="fa fa-user"></i><h5>A known VITian</h5><div class="random"></div></div>
 
 </div>
 </div>
@@ -41,9 +44,10 @@
 <div class="inputBatch box">
 	
 <h3>Enter the batch code()</h3>
-
 <input type="text">
-<input type="submit" name='batch'>
+<p class="small">The full registration code: for example, 14MCA0020*.</p>
+
+<div class="getBatch btn">Go</div>
 	
 </div>
 
@@ -51,8 +55,8 @@
 
 		<h3>Enter the registration code</h3>
 		<input type="text">
-		<input type="submit" name='regno'>
-	
+		<p class="small">The batch code only; for example, 14MCA for MCA 2014 Batch*.</p>
+	<div class="getInputReg btn">Go</div>	
 </div>
 
 
@@ -75,8 +79,8 @@
 
 <div class="options">
 	
-	<div class="one"><h5>Play Again</h5><div class="random"></div></div>
-	<div class="two"><h5>Share on Facebook</h5><div class="random"></div></div>
+	<div class="one"><i class="fa fa-repeat"></i><h5>Play Again</h5><div class="random"></div></div>
+	<div class="two"><i class="fa fa-share"></i><h5>Share on Facebook</h5><div class="random"></div></div>
 
 </div>
 

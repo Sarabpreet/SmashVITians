@@ -7,7 +7,7 @@ border: 0px;
 }
 
 body{
-/*font-family: 'Press Start 2P', sans-serif;*/
+font-family: 'Press Start 2P', sans-serif;
 
 background: url('../images/bg.png') no-repeat top center;
 
@@ -78,4 +78,41 @@ box-shadow: 0 0 0 20px #168BD9;
   cursor: pointer;
   
   
+}
+
+.chooseTarget i,.shareCanvas i {
+  
+  font-size:50px;
+
+  margin: 20px;
+  color: darkorange;
+  
+}
+
+.chooseTarget h5 {
+  text-transform: uppercase;
+}
+
+.btn {
+  background: url('../images/filter.png') purple;
+  width: 50px;
+  height: 20px;
+  padding:10px;
+  color: white;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.btn:hover {
+  
+  background: url('../images/filter.png') darkgoldenrod;
+  color:black;
+  
+}
+p.small {
+  
+  font-size: 12px;
+  font-family: 'sans-serif';
+  margin:-10px 20px 20px;
+  text-transform: none;
 }
