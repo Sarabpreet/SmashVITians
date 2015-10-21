@@ -43,9 +43,10 @@
 
 <div class="inputBatch box">
 	
-<h3>Enter the batch code()</h3>
+<h3>Victim's batch code </h3>
 <input type="text">
-<p class="small">The full registration code: for example, 14MCA0020*.</p>
+		<p class="small">The batch code only; for example, 14MCA for MCA 2014 Batch*.</p>
+
 
 <div class="getBatch btn">Go</div>
 	
@@ -53,9 +54,10 @@
 
 <div class="inputReg box">
 
-		<h3>Enter the registration code</h3>
+		<h3>Enter victim's registration code</h3>
 		<input type="text">
-		<p class="small">The batch code only; for example, 14MCA for MCA 2014 Batch*.</p>
+		<p class="small">The full registration code: for example, 14MCA0020*.</p>
+
 	<div class="getInputReg btn">Go</div>	
 </div>
 
@@ -107,7 +109,12 @@
 	<?php } 
 
 
-	else if($form) {
+	else if(isset($form)) {
+		if($form){
+
+
+
+		
 
 ?>
 
@@ -117,7 +124,15 @@ include 'form.php';
 
 
 
-		}?>
+		}}
+
+
+		else {
+
+include 'form.php';
+
+
+			}?>
 
 
 

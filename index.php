@@ -18,26 +18,34 @@ if(isset($_COOKIE['score'])) {
 else {
 
 			if(isset($_POST['regno'])) {
-			setcookie('name',$_POST['regno'],time()+3600,1);//sets score as 0 
-			setcookie('score',165,time()+3600,1);//sets score as 0 
+										
+						if(!$_POST['regno']==''){
+
+									setcookie('name',$_POST['regno'],time()+3600,1);//sets score as 0 
+									setcookie('score',165,time()+3600,1);//sets score as 0 
 
 
 
-			//if there is a variable called regno in request.
-			//if register number isnt present
+									//if there is a variable called regno in request.
+									//if register number isnt present
 
-					if(isset($_COOKIE['score'])) {
+											if(isset($_COOKIE['score'])) {
 
-						//if cookie is present...
-											$clientScore=getClientScore(); //prints high score, for the day in client side.
-											$topScore=getTopScore();		//prints high score, for the day in server side.
-											$flag_score=true;
-					}
-					else {
+												//if cookie is present...
+																	$clientScore=getClientScore(); //prints high score, for the day in client side.
+																	$topScore=getTopScore();		//prints high score, for the day in server side.
+																	$flag_score=true;
+											}
+											else {
 
-									echo '<script> window.location.reload(); </script>';
-					}
+															echo '<script> window.location.reload(); </script>';
+											}
 												
+
+							
+						}
+
+
 					
 			}
 			else {
