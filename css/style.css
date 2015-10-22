@@ -34,11 +34,30 @@ margin: 20px auto;
 
 
 .info {
-  
-  display: none;
+
+  color: white;
+  overflow: hidden;
+  margin: 20px auto -18px;
+  width: 55%;
+  min-width: 900px;
   
 }
 
+.info p {
+  
+    font-size: 14px;
+}
+.left {
+
+  float:left;
+
+}
+
+
+.right {
+
+  float: right;
+}
 .box {
   margin: 50px auto;
   display: block;
@@ -62,22 +81,24 @@ box-shadow: 0 0 0 20px #168BD9;
 .box .options {
   width: 60%;
   margin: 20px auto;
+  text-align:center;
+ 
 }
 
 
+
 .box .one {
-  
   float:left;
   cursor: pointer;
+
 }
 
 
 
 .box .two {
-  float:right;
+  
   cursor: pointer;
-  
-  
+  float: right;
 }
 
 .chooseTarget i,.shareCanvas i {

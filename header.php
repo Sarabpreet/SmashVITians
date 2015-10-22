@@ -20,15 +20,15 @@
 ?> 
 
 <div class="info">
-	<p>Welcome <?php echo getClientName(); ?></p>
-	<p>The highest score is : <?php echo $clientScore ;?></p>
-	<p>Today's Highest Score is : <?php  echo $topScore;?></p>
+<!-- 	<p>Welcome <?php echo getClientName(); ?></p> -->
+	<p class="left">The highest score is : <?php echo $clientScore ;?></p>
+	<p class="right">Today's Highest Score is : <?php  echo $topScore;?></p>
 
 </div>
 
 <div class="chooseTarget box">
 	
-<h3>Choose your target</h3>
+<h3>Smash? sure!! Who?</h3>
 
 
 <div class="options">
@@ -82,7 +82,7 @@
 <div class="options">
 	
 	<div class="one"><i class="fa fa-repeat"></i><h5>Play Again</h5><div class="random"></div></div>
-	<div class="two"><i class="fa fa-share"></i><h5>Share on Facebook</h5><div class="random"></div></div>
+	<div class="two"><i class="fa fa-share"></i><h5>Share Score</h5><div class="random"></div></div>
 
 </div>
 
