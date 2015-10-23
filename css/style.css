@@ -15,21 +15,21 @@ background: url('../images/bg.png') no-repeat top center #4da9de;
 
 input{
 
-display: block;
-width: 40%;
-height: 34px;
-padding: 6px 12px;
-font-size: 14px;
-line-height: 1.42857;
-color: #555;
-background-color: #FFF;
-background-image: none;
-border: 1px solid #CCC;
-border-radius: 4px;
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
-margin: 20px auto;
-/*transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
-*/
+    display: block;
+    width: 40%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #555;
+    background-color: #FFF;
+    background-image: none;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+    margin: 20px auto;
+    /*transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    */
 }
 
 
@@ -69,7 +69,7 @@ margin: 20px auto;
     text-align:center;
   min-width: 900px;
     -webkit-box-shadow: 0 0 0 20px #168BD9;
-box-shadow: 0 0 0 20px #168BD9;
+  box-shadow: 0 0 0 20px #168BD9;
 }
 .box h3 {
   color:#fb792a;
@@ -110,10 +110,26 @@ box-shadow: 0 0 0 20px #168BD9;
   
 }
 
-.chooseTarget h5 {
+h5 {
   text-transform: uppercase;
+  font-size:.8em;
 }
 
+input.btn {
+  height: 40px;
+}
+
+.addOrange{
+
+color:orange;
+
+}
+
+.removeOrange{
+
+color:darkorange;
+
+}
 .btn {
   background: url('../images/filter.png') purple;
   width: 50px;
@@ -136,4 +152,10 @@ p.small {
   font-family: 'sans-serif';
   margin:-10px 20px 20px;
   text-transform: none;
+}
+
+
+.big {
+
+  font-size:60px;
 }

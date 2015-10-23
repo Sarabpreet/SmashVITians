@@ -10,9 +10,9 @@
 	
  
 
-	<link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+<!-- 	<link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
 
-
+ -->
 
 
 <?php if($flag_score){
@@ -35,7 +35,6 @@
 	
 	<div class="one"><i class="fa fa-users"></i>
 <h5>Random Batch Mates</h5><div class="random"></div></div>
-
 	<div class="two"><i class="fa fa-user"></i><h5>A known VITian</h5><div class="random"></div></div>
 
 </div>
@@ -44,7 +43,7 @@
 <div class="inputBatch box">
 	
 <h3>Victim's batch code </h3>
-<input type="text">
+<input type="text" id='batchCode'>
 		<p class="small">The batch code only; for example, 14MCA for MCA 2014 Batch*.</p>
 
 
@@ -55,7 +54,7 @@
 <div class="inputReg box">
 
 		<h3>Enter victim's registration code</h3>
-		<input type="text">
+		<input type="text" id='regCode'>
 		<p class="small">The full registration code: for example, 14MCA0020*.</p>
 
 	<div class="getInputReg btn">Go</div>	

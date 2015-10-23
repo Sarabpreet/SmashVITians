@@ -65,8 +65,6 @@ else {
 
 								}
 								else {
-
-
 								return 0;
 				
 								}
