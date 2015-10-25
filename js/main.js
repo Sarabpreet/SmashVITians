@@ -26,7 +26,47 @@ box[0].querySelector('.two').addEventListener('click',two);
 box[1].querySelector('.getBatch').addEventListener('click',getBatchCode);
 document.querySelector('.getInputReg').addEventListener('click',getRegCode);
 
+
+
 //second canvas 
+
+
+
+
+
+
+
+
+
+
+
+// functions 
+
+
+
+function appendHero(){
+
+gc.innerHTML='<div class="hero"></div>';
+var hero=gc.querySelector('.hero');
+hero.style.top=getRandomInt(-40,390)+'px';
+hero.style.left=getRandomInt(-40,840)+'px';
+hero.addEventListener('click',game);
+}
+
+
+function hero(){
+	
+hero.style.top=getRandomInt(-40,390)+'px';
+hero.style.left=getRandomInt(-40,840)+'px';
+
+
+}
+
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
+
 
 function one() {
 		box[0].style.display='none';
@@ -56,9 +96,7 @@ alert(RegNo);
 
 
 function timefunk(){
-
-
-setInterval(a,600);
+var tick=setInterval(a,600);
 count=0;
 function a(){
 	count=count+1;
@@ -67,20 +105,21 @@ function a(){
 			box[3].innerHTML="<h1 class='big'>"+count+"</h1>";
 
 	}
-	if(count==4) {
+	if(count>=4 && count<=6) {
 
 	box[3].innerHTML="<h1 class='big'> GO GO GO </h1>";
 
 	}
-	if(count>=4 && count >=6){
+	if(count==7){
 
 	box[3].innerHTML="";
-
+	window.clearInterval(tick);
+	console.log("ticker cleared");
+	appendHero();
 	}
 	else {
 
-		console.log('err');
-
+		
 	}
 }
 

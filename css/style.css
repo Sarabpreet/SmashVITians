@@ -32,6 +32,21 @@ input{
     */
 }
 
+.gameCanvas{
+
+overflow: hidden;
+
+}
+.hero {
+
+  background:green;
+  width:144px;
+  height:144px;
+  border-radius:72px;
+  position: relative;
+  cursor: pointer;
+
+}
 
 .info {
 

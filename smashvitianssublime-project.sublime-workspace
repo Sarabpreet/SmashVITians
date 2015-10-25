@@ -53,9 +53,14 @@
 	[
 	],
 	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 67.0,
+		"last_filter": "Package Control: install package",
 		"selected_items":
 		[
 			[
@@ -92,12 +97,21 @@
 	},
 	"file_history":
 	[
-		"/C/wamp/www/SmashVITians/form.php",
-		"/C/wamp/www/SmashVITians/header.php",
-		"/C/wamp/www/SmashVITians/fb.php",
-		"/C/wamp/www/SmashVITians/css/style.css",
-		"/C/wamp/www/SmashVITians/main.js",
-		"/C/wamp/www/SmashVITians/index.php",
+		"/Users/sarab/Desktop/projects/trydjango/src/feeds/admin.py",
+		"/Users/sarab/Desktop/projects/trydjango/src/feeds/models.py",
+		"/Users/sarab/Desktop/projects/trydjango/src/feeds/views.py",
+		"/Users/sarab/Desktop/projects/trydjango/src/trydjango18/settings.py",
+		"/Users/sarab/Desktop/projects/trydjango/src/trydjango18/urls.py",
+		"/Users/sarab/Desktop/projects/trydjango/src/feeds/urls.py",
+		"/Users/sarab/Desktop/projects/trydjango/src/feeds/templates/home1.html",
+		"/Users/sarab/Desktop/projects/trydjango/src/feeds/templates/resume.html",
+		"/Users/sarab/Desktop/projects/trydjango/src/feeds/templates/home.html",
+		"/Users/sarab/Desktop/projects/trydjango/lib/python2.7/site-packages/django/contrib/admin/templates/home.html",
+		"/Users/sarab/Desktop/projects/trydjango/src/feeds/migrations/urls.py",
+		"/Users/sarab/Desktop/projects/trydjango/src/trydjango18/__init__.py",
+		"/Users/sarab/Desktop/projects/trydjango/src/feeds/migrations/__init__.py",
+		"/Users/sarab/Desktop/projects/trydjango/src/feeds/tests.py",
+		"/Users/sarab/Desktop/projects/trydjango/src/feeds/__init__.py",
 		"/Applications/MAMP/htdocs/SmashVITians/footer.php",
 		"/Applications/MAMP/htdocs/SmashVITians/index.php",
 		"/Applications/MAMP/htdocs/SmashVITians/css/style.css",
@@ -141,7 +155,7 @@
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -179,182 +193,6 @@
 		{
 			"sheets":
 			[
-<<<<<<< Updated upstream
-=======
-				{
-					"buffer": 0,
-					"file": "fb.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 43,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								24,
-								24
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "css/style.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2064,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1916,
-								1916
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2362.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "main.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1885,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1809,
-								1809
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 856.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "index.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2030,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1489,
-								1489
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "header.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1967,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1224,
-								1224
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": -0.0,
-						"translation.y": 2.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "form.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 220,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								60,
-								60
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				}
->>>>>>> Stashed changes
 			]
 		}
 	],
@@ -393,6 +231,7 @@
 	{
 		"height": 0.0
 	},
+	"pinned_build_system": "",
 	"project": "smashvitianssublime-project.sublime-project",
 	"replace":
 	{
@@ -402,6 +241,7 @@
 	"select_file":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -410,6 +250,7 @@
 	"select_project":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -418,11 +259,13 @@
 	"select_symbol":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
 		"width": 0.0
 	},
+	"selected_group": 0,
 	"settings":
 	{
 	},
@@ -430,7 +273,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 313.0,
+	"side_bar_width": 224.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
