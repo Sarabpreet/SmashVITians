@@ -65,7 +65,7 @@
 
 <div class="gameCanvas box">
 	<!-- global input would be changed here... -->
-<div class="actor"></div>
+<div class="hero"></div>
 
 </div>
 

@@ -45,6 +45,7 @@ overflow: hidden;
   border-radius:72px;
   position: relative;
   cursor: pointer;
+  transition: all linear 200ms;
 
 }
 
@@ -119,7 +120,6 @@ overflow: hidden;
 .chooseTarget i,.shareCanvas i {
   
   font-size:50px;
-
   margin: 20px;
   color: darkorange;
   
