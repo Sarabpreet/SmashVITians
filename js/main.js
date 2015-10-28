@@ -72,7 +72,7 @@ function game() {
 			
 			right.innerHTML='Score: 0' ; 
 			console.log("game");
-			tick2=setInterval(changePostion,600);
+			tick2=setInterval(changePostion,1200);
 			count=0;
 
 }
@@ -204,7 +204,7 @@ function two() {
 function getBatchCode(){
 
 batchNo=box[1].querySelector('#batchCode').value;
-alert(batchNo);
+// alert(batchNo);
 		box[1].style.display='none';
 		box[3].style.display='block';
 		timefunk();
@@ -213,7 +213,7 @@ alert(batchNo);
 function getRegCode(){
 
 RegNo=box[2].querySelector('#regCode').value;
-alert(RegNo);
+// alert(RegNo);
 		box[2].style.display='none';
 		box[3].style.display='block';
 		timefunk();

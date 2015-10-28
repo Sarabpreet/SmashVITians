@@ -20,9 +20,9 @@
 ?> 
 
 <div class="info">
-<!-- 	<p>Welcome <?php echo getClientName(); ?></p> -->
-	<p class="left">The highest score is : <?php echo $clientScore ;?></p>
-	<p class="right">Today's Highest Score is : <?php  echo $topScore;?></p>
+	<!-- 	<p>Welcome <?php echo getClientName(); ?></p> -->
+<!-- 	<p class="left">The highest score is : <?php echo $clientScore ;?></p>
+	<p class="right">Today's Highest Score is : <?php  echo $topScore;?></p> -->
 
 </div>
 
@@ -45,8 +45,6 @@
 <h3>Victim's batch code </h3>
 <input type="text" id='batchCode'>
 		<p class="small">The batch code only; for example, 14MCA for MCA 2014 Batch*.</p>
-
-
 <div class="getBatch btn">Go</div>
 	
 </div>

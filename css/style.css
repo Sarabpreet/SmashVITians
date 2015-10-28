@@ -37,6 +37,13 @@ input{
 overflow: hidden;
 
 }
+
+.hero:hover {
+
+-webkit-box-shadow: 10px 10px 20px 2px #A3A3A3;
+box-shadow: 10px 10px 20px 2px #A3A3A3;
+
+}
 .hero {
 
 
@@ -48,6 +55,8 @@ overflow: hidden;
   position: relative;
   cursor: pointer;
   transition: all linear 600ms;
+  -webkit-box-shadow: 20px 20px 60px 2px #A3A3A3;
+  box-shadow: 20px 20px 60px 2px #A3A3A3;
 
 
 }
