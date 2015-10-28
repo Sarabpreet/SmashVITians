@@ -72,7 +72,7 @@ function game() {
 			
 			right.innerHTML='Score: 0' ; 
 			console.log("game");
-			tick2=setInterval(changePostion,1200);
+			tick2=setInterval(changePostion,600);
 			count=0;
 
 }
@@ -110,7 +110,6 @@ box[0].style.display='block';
 
 sc.querySelector('.two').addEventListener('click',function(){
 
-alert('you have sucessfully posted score on facebook wall');
 sc.style.display='none';
 Scount=0;
 count=0;
@@ -204,7 +203,7 @@ function two() {
 function getBatchCode(){
 
 batchNo=box[1].querySelector('#batchCode').value;
-// alert(batchNo);
+
 		box[1].style.display='none';
 		box[3].style.display='block';
 		timefunk();
@@ -213,7 +212,7 @@ batchNo=box[1].querySelector('#batchCode').value;
 function getRegCode(){
 
 RegNo=box[2].querySelector('#regCode').value;
-// alert(RegNo);
+
 		box[2].style.display='none';
 		box[3].style.display='block';
 		timefunk();
