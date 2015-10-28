@@ -59,48 +59,11 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "header.php",
-			"settings":
-			{
-				"buffer_size": 1957,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "js/main.js",
-			"settings":
-			{
-				"buffer_size": 3146,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "css/style.css",
-			"settings":
-			{
-				"buffer_size": 2256,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "footer.php",
-			"settings":
-			{
-				"buffer_size": 51,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
-	"build_system_choices":
-	[
-	],
-	"build_varint": "",
 	"command_palette":
 	{
 		"height": 67.0,
-		"last_filter": "Package Control: install package",
 		"selected_items":
 		[
 			[
@@ -135,14 +98,12 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/Applications/MAMP/htdocs/SmashVITians",
-		"/Applications/MAMP/htdocs/SmashVITians/css",
-		"/Applications/MAMP/htdocs/SmashVITians/js"
-	],
 	"file_history":
 	[
+		"/C/wamp/www/SmashVITians/footer.php",
+		"/C/wamp/www/SmashVITians/header.php",
+		"/C/wamp/www/SmashVITians/js/main.js",
+		"/C/wamp/www/SmashVITians/css/style.css",
 		"/Users/sarab/Desktop/projects/trydjango/src/feeds/admin.py",
 		"/Users/sarab/Desktop/projects/trydjango/src/feeds/models.py",
 		"/Users/sarab/Desktop/projects/trydjango/src/feeds/views.py",
@@ -201,7 +162,7 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 36.0
 	},
 	"find_in_files":
 	{
@@ -215,6 +176,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"click",
+			"info",
+			"setinter",
+			"alert",
 			"h5",
 			"orrange",
 			"hover",
@@ -237,125 +202,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "header.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1957,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1443,
-								1443
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "js/main.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3146,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2058,
-								2058
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 876.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "css/style.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2256,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1641,
-								1641
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1742.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "footer.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 51,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								17,
-								17
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -394,7 +242,6 @@
 	{
 		"height": 0.0
 	},
-	"pinned_build_system": "",
 	"project": "smashvitianssublime-project.sublime-project",
 	"replace":
 	{
@@ -404,7 +251,6 @@
 	"select_file":
 	{
 		"height": 0.0,
-		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -413,7 +259,6 @@
 	"select_project":
 	{
 		"height": 0.0,
-		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -422,13 +267,11 @@
 	"select_symbol":
 	{
 		"height": 0.0,
-		"last_filter": "",
 		"selected_items":
 		[
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
 	"settings":
 	{
 	},

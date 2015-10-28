@@ -32,6 +32,16 @@ input{
     */
 }
 
+
+.ani {
+
+
+-moz-transform: scale(1.2) rotate(3deg) translateX(10px) translateY(0px) skewX(4deg) skewY(0deg);
+-webkit-transform: scale(1.2) rotate(3deg) translateX(10px) translateY(0px) skewX(4deg) skewY(0deg);
+-o-transform: scale(1.2) rotate(3deg) translateX(10px) translateY(0px) skewX(4deg) skewY(0deg);
+-ms-transform: scale(1.2) rotate(3deg) translateX(10px) translateY(0px) skewX(4deg) skewY(0deg);
+transform: scale(1.2) rotate(3deg) translateX(10px) translateY(0px) skewX(4deg) skewY(0deg);
+}
 .gameCanvas{
 
 overflow: hidden;
@@ -40,8 +50,8 @@ overflow: hidden;
 
 .hero:hover {
 
--webkit-box-shadow: 10px 10px 20px 2px #A3A3A3;
-box-shadow: 10px 10px 20px 2px #A3A3A3;
+-webkit-box-shadow: 10px 20px 20px 2px #A3A3A3;
+box-shadow: 10px 20px 20px 2px #A3A3A3;
 
 }
 .hero {

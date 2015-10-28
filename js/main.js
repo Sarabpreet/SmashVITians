@@ -64,7 +64,7 @@ hero.style.left=getRandomInt(-40,840)+'px';
 game();
 console.log('hi');
 hero.addEventListener("click",score);
-
+hero.className="hero";
 }
 
 function game() {
@@ -75,11 +75,13 @@ function game() {
 			tick2=setInterval(changePostion,600);
 			count=0;
 
+
 }
 
 
 function score(){
 
+	hero.className="hero ani";
 	Scount++;
 	right.innerHTML='Score: '+Scount; 
 
@@ -127,6 +129,7 @@ box[0].style.display='block';
 
 
 function changePostion () {
+			hero.className="hero";
 			count++;
 			var Scount  
 			console.log('working');
