@@ -18,6 +18,7 @@ var sc=document.querySelector('.shareCanvas');
 var box=document.querySelectorAll('.box');
 var count=0;
 var tick2;
+var Scount=0;
 
 for (var i = 0; i < box.length; i++) {
 	box[i].style.display='none';
@@ -31,7 +32,7 @@ box[1].querySelector('.getBatch').addEventListener('click',getBatchCode);
 document.querySelector('.getInputReg').addEventListener('click',getRegCode);
 var hero=box[3].querySelector('.hero');
 hero.style.display='none';
-
+var Scount=0;
 
 //second canvas 
 
@@ -51,29 +52,85 @@ hero.style.display='none';
 
 function appendHero(){
 
+sc.style.display='none';
+gc.style.display='block';
 gc.innerHTML='<div class="hero"></div>';
 hero=box[3].querySelector('.hero');
 hero.style.top=getRandomInt(-40,390)+'px';
 hero.style.left=getRandomInt(-40,840)+'px';
 game();
 console.log('hi');
+hero.addEventListener("click",score);
 
 }
 
 function game() {
-	
-			var tick2=setInterval(changePostion,600);
-			console.log('hi');
+
+			
+			right.innerHTML='Score: 0' ; 
+			console.log("game");
+			tick2=setInterval(changePostion,600);
 			count=0;
 
 }
+
+
+function score(){
+
+Scount++;
+right.innerHTML='Score: '+Scount; 
+
+
+
+
+}
+
+function share(){
+
+gc.style.display='none';
+sc.style.display='block';
+
+sc.querySelector('h3').innerHTML="Your Score is "+Scount;
+
+sc.querySelector('.one').addEventListener('click',function(){
+
+appendHero();
+Scount=0;
+count=0;
+
+
+
+});
+
+
+sc.querySelector('.two').addEventListener('click',function(){
+
+alert('you have sucessfully posted score on facebook wall');
+sc.style.display='none';
+Scount=0;
+count=0;
+box[0].style.display='block';
+
+
+});
+
+
+
+}
+
+
+
+
+
+
+
 function changePostion () {
 			count++;
-			  
+			var Scount  
 			console.log('working');
 					if(count<60) {
 						left.innerHTML='Time:'+count;  
-						right.innerHTML='Time:'+count;  
+						 
 					hero=box[3].querySelector('.hero');
 					hero.style.top=getRandomInt(-40,390)+'px';
 					hero.style.left=getRandomInt(-40,840)+'px';
@@ -82,11 +139,14 @@ function changePostion () {
 					if(count==61) {
 							left.innerHTML='Time: 60';  
 							window.clearInterval(tick2);
+
+							share();
 							// send it to the server.
 
 							//get the confirmation 
 							//print
 					}
+
 					else {
 				
 					}
