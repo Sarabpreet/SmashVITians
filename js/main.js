@@ -19,6 +19,9 @@ var box=document.querySelectorAll('.box');
 var count=0;
 var tick2;
 var Scount=0;
+var RegNo='0';
+var batchNo='0';
+var invalid;
 
 for (var i = 0; i < box.length; i++) {
 	box[i].style.display='none';
@@ -77,11 +80,8 @@ function game() {
 
 function score(){
 
-Scount++;
-right.innerHTML='Score: '+Scount; 
-
-
-
+	Scount++;
+	right.innerHTML='Score: '+Scount; 
 
 }
 
@@ -89,15 +89,20 @@ function share(){
 
 gc.style.display='none';
 sc.style.display='block';
-
 sc.querySelector('h3').innerHTML="Your Score is "+Scount;
-
 sc.querySelector('.one').addEventListener('click',function(){
 
-appendHero();
+// appendHero();
+// Scount=0;
+// count=0;
+
+
+
+
+sc.style.display='none';
 Scount=0;
 count=0;
-
+box[0].style.display='block';
 
 
 });
@@ -122,18 +127,45 @@ box[0].style.display='block';
 
 
 
-
-
 function changePostion () {
 			count++;
 			var Scount  
 			console.log('working');
 					if(count<60) {
 						left.innerHTML='Time:'+count;  
-						 
+					
+						if(batchNo!=='0') {
+
+
+
+								var random=getRandomInt(10,99);
+								var batchnum=batchNo;
+								console.log(batchNo);
+								var regnum = batchnum+"00"+random;
+								var finalurl='https://academics.vit.ac.in/student/view_photo_2.asp?rgno='+regnum;
+
+
+						}
+
+						else if(RegNo!=='0'){
+
+								
+								var batchnum=RegNo;
+								console.log(RegNo);
+								var regnum = batchnum+random;
+								var finalurl='https://academics.vit.ac.in/student/view_photo_2.asp?rgno='+RegNo;
+
+						}
+						else {
+
+							invalid=True;
+						}
+
 					hero=box[3].querySelector('.hero');
 					hero.style.top=getRandomInt(-40,390)+'px';
 					hero.style.left=getRandomInt(-40,840)+'px';
+					hero.style.background='url('+finalurl+')';
+					hero.style.backgroundSize='cover';
 					}
 
 					if(count==61) {
@@ -171,7 +203,7 @@ function two() {
 }
 function getBatchCode(){
 
-var batchNo=box[1].querySelector('#batchCode').value;
+batchNo=box[1].querySelector('#batchCode').value;
 alert(batchNo);
 		box[1].style.display='none';
 		box[3].style.display='block';
@@ -180,7 +212,7 @@ alert(batchNo);
 
 function getRegCode(){
 
-var RegNo=box[2].querySelector('#regCode').value;
+RegNo=box[2].querySelector('#regCode').value;
 alert(RegNo);
 		box[2].style.display='none';
 		box[3].style.display='block';
