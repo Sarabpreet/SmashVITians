@@ -59,6 +59,18 @@
 	},
 	"buffers":
 	[
+		{
+			"contents": "function Cow() {\n    this.mowed = false;\n    this.moo = function moo() {\n        this.mowed = true; \n        // mootable state: don't do that at home\n        return 'moo!';\n    };\n}\n\n\n// cow-test.js\ncasper.test.begin('Cow can moo', 2, function suite(test) {\n    var cow = new Cow();\n    test.assertEquals(cow.moo(), 'moo!');\n    test.assert(cow.mowed);\n    test.done();\n});\n\n\n",
+			"file": "/C/Users/Sarabpreet/Desktop/casper.js",
+			"file_size": 473,
+			"file_write_time": 130906103705552343,
+			"settings":
+			{
+				"buffer_size": 376,
+				"line_ending": "Windows",
+				"name": "var casper = require('casper').create();"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -100,10 +112,10 @@
 	},
 	"file_history":
 	[
+		"/C/wamp/www/SmashVITians/css/style.css",
+		"/C/wamp/www/SmashVITians/js/main.js",
 		"/C/wamp/www/SmashVITians/footer.php",
 		"/C/wamp/www/SmashVITians/header.php",
-		"/C/wamp/www/SmashVITians/js/main.js",
-		"/C/wamp/www/SmashVITians/css/style.css",
 		"/Users/sarab/Desktop/projects/trydjango/src/feeds/admin.py",
 		"/Users/sarab/Desktop/projects/trydjango/src/feeds/models.py",
 		"/Users/sarab/Desktop/projects/trydjango/src/feeds/views.py",
@@ -162,7 +174,7 @@
 	],
 	"find":
 	{
-		"height": 36.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -202,14 +214,44 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/Sarabpreet/Desktop/casper.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 376,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16,
+								16
+							]
+						],
+						"settings":
+						{
+							"auto_name": "var casper = require('casper').create();",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 31.0
 	},
 	"input":
 	{
@@ -245,7 +287,7 @@
 	"project": "smashvitianssublime-project.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 58.0
 	},
 	"save_all_on_build": true,
 	"select_file":

@@ -7,10 +7,9 @@ border: 0px;
 }
 
 body{
-font-family: 'Press Start 2P', sans-serif;
 
-background: url('../images/bg.png') no-repeat top center #4da9de;
-
+    font-family: 'Press Start 2P', sans-serif;
+    background: url('../images/bg.png') no-repeat top center #4da9de;
 }
 
 input{
@@ -64,7 +63,7 @@ box-shadow: 10px 20px 20px 2px #A3A3A3;
   border-radius:72px;
   position: relative;
   cursor: pointer;
-  transition: all linear 600ms;
+  transition: all linear 200ms;
   -webkit-box-shadow: 20px 20px 60px 2px #A3A3A3;
   box-shadow: 20px 20px 60px 2px #A3A3A3;
 
@@ -143,8 +142,13 @@ box-shadow: 10px 20px 20px 2px #A3A3A3;
   
   font-size:50px;
   margin: 20px;
-  color: darkorange;
+  color: orange;
   
+}
+
+.chooseTarget i:hover,.shareCanvas i:hover {
+
+  color:darkorange;
 }
 
 h5 {

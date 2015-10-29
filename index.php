@@ -22,7 +22,7 @@ else {
 						if(!$_POST['regno']==''){
 
 									setcookie('name',$_POST['regno'],time()+3600,1);//sets score as 0 
-									setcookie('score',165,time()+3600,1);//sets score as 0 
+									setcookie('score',0,time()+3600,1);//sets score as 0 
 
 
 

@@ -21,8 +21,8 @@
 
 <div class="info">
 	<!-- 	<p>Welcome <?php echo getClientName(); ?></p> -->
-	<p class="left"><!-- The highest score is : <?php echo $clientScore ;?> --></p>
-	<p class="right"><!-- Today's Highest Score is : <?php  echo $topScore;?> --></p>
+	<p class="left">Name: <?php echo '<span>'.getClientName().'</span>';?> </p>
+	<p class="right">Highest Score: <?php  echo '<span>'.$clientScore.'</span>';?></p>
 
 </div>
 

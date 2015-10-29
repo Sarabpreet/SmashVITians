@@ -22,6 +22,8 @@ var Scount=0;
 var RegNo='0';
 var batchNo='0';
 var invalid;
+var name=inf.querySelector('.left span').innerHTML;
+var pscore=inf.querySelector('.right span').innerHTML;
 
 for (var i = 0; i < box.length; i++) {
 	box[i].style.display='none';
@@ -92,6 +94,16 @@ function share(){
 gc.style.display='none';
 sc.style.display='block';
 sc.querySelector('h3').innerHTML="Your Score is "+Scount;
+if(Scount>=pscore) {
+
+postScore(name,Scount);
+
+}
+else {
+
+	postScore(name,pscore);
+}
+
 sc.querySelector('.one').addEventListener('click',function(){
 
 // appendHero();
@@ -177,6 +189,8 @@ function changePostion () {
 							share();
 							// send it to the server.
 
+							
+
 							//get the confirmation 
 							//print
 					}
@@ -254,7 +268,23 @@ count=0;
 }
 
 
+function postScore(user,score) {
+	
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
 
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+		 // obj = JSON.parse(xhttp.responseText);
+	// 	 var doc=document.querySelector('#demo');
+	// 	 doc.innerHTML=xhttp.responseText;
+	// // o=obj;
+	// // recieveObject(o);
+	
+		}
 
-
+  }
+  xhttp.open("GET","what.php?score="+score+"&"+"name="+user, true);
+  xhttp.send();
+ console.log("sent");
+}
 

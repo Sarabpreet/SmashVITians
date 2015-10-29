@@ -1,6 +1,6 @@
 <div class="box regName">
 
-	<h3>Enter your registration code</h3>
+	<h3>Enter your name</h3>
 
 	<form action="index.php" method="POST">
 <input type="text" name="regno" id='regno'>
