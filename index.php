@@ -7,7 +7,7 @@ $flag_score=false;
 if(isset($_COOKIE['score'])) {
 	//if cookie is present...
 						$clientScore=getClientScore(); //prints high score, for the day in client side.
-								$topScore=getTopScore();		//prints high score, for the day in server side.
+						$topScore=getTopScore();		//prints high score, for the day in server side.
 						$flag_score=true;
 }
 else {
@@ -62,6 +62,7 @@ function getTopScore (){
 //functions that fetches data to get highest score in a minute.
 return 4;
 }
+echo "<a href='clearcookie.php'> Clear Cookies </a>";
 include 'header.php';
 include 'footer.php';
 ?>

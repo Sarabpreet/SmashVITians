@@ -4,12 +4,37 @@
 		"selected_items":
 		[
 			[
+<<<<<<< Updated upstream
 				"S",
 				"Scount"
 			],
 			[
 				"mysql",
 				"mysql_connect"
+=======
+				"batch",
+				"batchNo"
+			],
+			[
+				"reg",
+				"regCode"
+			],
+			[
+				"a",
+				"appendHero"
+			],
+			[
+				"S",
+				"Score"
+			],
+			[
+				"sc",
+				"Scount"
+			],
+			[
+				"Sco",
+				"Scount"
+>>>>>>> Stashed changes
 			],
 			[
 				"tie",
@@ -67,6 +92,17 @@
 	},
 	"buffers":
 	[
+<<<<<<< Updated upstream
+=======
+		{
+			"file": "js/main.js",
+			"settings":
+			{
+				"buffer_size": 4568,
+				"line_ending": "Unix"
+			}
+		}
+>>>>>>> Stashed changes
 	],
 	"build_system": "",
 	"command_palette":
@@ -108,6 +144,7 @@
 	},
 	"file_history":
 	[
+<<<<<<< Updated upstream
 		"/C/wamp/www/SmashVITians/css/style.css",
 		"/C/wamp/www/SmashVITians/js/sample.html",
 		"/C/wamp/www/SmashVITians/form.php",
@@ -121,6 +158,12 @@
 		"/C/wamp/www/Shopalyst/ShopalystStatic/js/process.js",
 		"/C/Users/Sarabpreet/Desktop/casper.js",
 		"/C/wamp/www/SmashVITians/footer.php",
+=======
+		"/Applications/MAMP/htdocs/SmashVITians/css/style.css",
+		"/Applications/MAMP/htdocs/SmashVITians/header.php",
+		"/Applications/MAMP/htdocs/SmashVITians/footer.php",
+		"/Applications/MAMP/htdocs/SmashVITians/js/main.js",
+>>>>>>> Stashed changes
 		"/Users/sarab/Desktop/projects/trydjango/src/feeds/admin.py",
 		"/Users/sarab/Desktop/projects/trydjango/src/feeds/models.py",
 		"/Users/sarab/Desktop/projects/trydjango/src/feeds/views.py",
@@ -136,10 +179,7 @@
 		"/Users/sarab/Desktop/projects/trydjango/src/feeds/migrations/__init__.py",
 		"/Users/sarab/Desktop/projects/trydjango/src/feeds/tests.py",
 		"/Users/sarab/Desktop/projects/trydjango/src/feeds/__init__.py",
-		"/Applications/MAMP/htdocs/SmashVITians/footer.php",
 		"/Applications/MAMP/htdocs/SmashVITians/index.php",
-		"/Applications/MAMP/htdocs/SmashVITians/css/style.css",
-		"/Applications/MAMP/htdocs/SmashVITians/header.php",
 		"/Users/sarab/Desktop/projects/staticblog/_config.yml",
 		"/Users/sarab/Desktop/projects/staticblog/sarabpreet.github.io/index.html",
 		"/Users/sarab/Desktop/projects/ShopalystHub/hello.php",
@@ -179,7 +219,11 @@
 	],
 	"find":
 	{
+<<<<<<< Updated upstream
 		"height": 34.0
+=======
+		"height": 35.0
+>>>>>>> Stashed changes
 	},
 	"find_in_files":
 	{
@@ -193,12 +237,24 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+<<<<<<< Updated upstream
 			"name",
 			"share",
 			"click",
 			"info",
 			"setinter",
 			"alert",
+=======
+			"1000",
+			"left",
+			"pla",
+			"batchno",
+			"regcode",
+			"batchno",
+			"batchCode",
+			"left",
+			"getrandom",
+>>>>>>> Stashed changes
 			"h5",
 			"orrange",
 			"hover",
@@ -221,8 +277,43 @@
 	"groups":
 	[
 		{
+<<<<<<< Updated upstream
 			"sheets":
 			[
+=======
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "js/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4568,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3062,
+								3062
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2443.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+>>>>>>> Stashed changes
 			]
 		}
 	],

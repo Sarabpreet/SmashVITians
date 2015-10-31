@@ -23,6 +23,7 @@ var batchNo='0';
 var invalid;
 var name=inf.querySelector('.left span').innerHTML;
 var pscore=inf.querySelector('.right span').innerHTML;
+var batchnum;
 for (var i = 0; i < box.length; i++) {
 box[i].style.display='none';
 };
@@ -60,30 +61,35 @@ Scount++;
 right.innerHTML='Score: '+Scount;
 }
 function share(){
-gc.style.display='none';
-sc.style.display='block';
-sc.querySelector('h3').innerHTML="Your Score is "+Scount;
-if(Scount>=pscore) {
-postScore(name,Scount);
-}
-else {
-postScore(name,pscore);
-}
-sc.querySelector('.one').addEventListener('click',function(){
-// appendHero();
-// Scount=0;
-// count=0;
-sc.style.display='none';
-Scount=0;
-count=0;
-box[0].style.display='block';
-});
-sc.querySelector('.two').addEventListener('click',function(){
-sc.style.display='none';
-Scount=0;
-count=0;
-box[0].style.display='block';
-});
+			gc.style.display='none';
+			sc.style.display='block';
+			sc.querySelector('h3').innerHTML="Your Score is "+Scount;
+			if(Scount>=pscore) {
+			postScore(name,Scount,batchnum);
+			}
+			else {
+			postScore(name,pscore);
+			}
+			sc.querySelector('.one').addEventListener('click',function(){
+			// appendHero();
+			// Scount=0;
+			// count=0;
+			sc.style.display='none';
+			Scount=0;
+			count=0;
+			box[0].style.display='block';
+			});
+			sc.querySelector('.two').addEventListener('click',function(){
+			sc.style.display='none';
+			Scount=0;
+			count=0;
+			box[0].style.display='block';
+
+			// reseting 
+				batchNo=0;
+				RegNo=0;
+
+			});
 }
 function changePostion () {
 hero.className="hero";
@@ -95,14 +101,14 @@ left.innerHTML='Time:'+count;
 
 if(batchNo!=='0') {
 var random=getRandomInt(10,99);
-var batchnum=batchNo;
+batchnum=batchNo;
 console.log(batchNo);
 var regnum = batchnum+"00"+random;
 var finalurl='https://academics.vit.ac.in/student/view_photo_2.asp?rgno='+regnum;
 }
 else if(RegNo!=='0'){
 
-var batchnum=RegNo;
+batchnum=RegNo;
 console.log(RegNo);
 var regnum = batchnum+random;
 var finalurl='https://academics.vit.ac.in/student/view_photo_2.asp?rgno='+RegNo;
@@ -176,7 +182,7 @@ else {
 }
 }
 }
-function postScore(user,score) {
+function postScore(user,score,batchnum) {
 
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
@@ -189,7 +195,7 @@ if (xhttp.readyState == 4 && xhttp.status == 200) {
 
 }
 }
-xhttp.open("GET","what.php?score="+score+"&"+"name="+user, true);
+xhttp.open("GET","what.php?score="+score+"&"+"name="+user+"&"+"victim="+batchnum,true);
 xhttp.send();
 console.log("sent");
 }

@@ -17,7 +17,7 @@
 			<p class="left">Name: <?php echo '<span>'.getClientName().'</span>';?> </p>
 			<p class="right">Highest Score: <?php  echo '<span>'.$clientScore.'</span>';?></p>
 		</div>
-		<div class="chooseTarget box">
+		<div class="chooseTarget box trans">
 			
 			<h3>Smash? sure!! Who?</h3>
 			<div class="options">
