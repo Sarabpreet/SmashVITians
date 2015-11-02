@@ -23,10 +23,10 @@ transform: translateX(150px);
 
 
   opacity:.4;
--webkit-transition: all 300s ease;
--moz-transition: all 300s ease;
+-webkit-transition: all 300000s ease;
+-moz-transition: all 3300000s ease;
 -ms-transition: all 300000s ease;
--o-transition: all 300s ease;
+-o-transition: all 300000s ease;
 
 background: yellow;
 }
@@ -72,12 +72,12 @@ input[type=text] {
 
 .ani {
 
+-moz-transform: rotate(360deg) translateX(20px) translateY(20px);
+-webkit-transform: rotate(360deg) translateX(20px) translateY(20px);
+-o-transform: rotate(360deg) translateX(20px) translateY(20px);
+-ms-transform: rotate(360deg) translateX(20px) translateY(20px);
+transform: rotate(360deg) translateX(20px) translateY(20px);
 
--moz-transform: scale(1.2) rotate(3deg) translateX(10px) translateY(0px) skewX(4deg) skewY(0deg);
--webkit-transform: scale(1.2) rotate(3deg) translateX(10px) translateY(0px) skewX(4deg) skewY(0deg);
--o-transform: scale(1.2) rotate(3deg) translateX(10px) translateY(0px) skewX(4deg) skewY(0deg);
--ms-transform: scale(1.2) rotate(3deg) translateX(10px) translateY(0px) skewX(4deg) skewY(0deg);
-transform: scale(1.2) rotate(3deg) translateX(10px) translateY(0px) skewX(4deg) skewY(0deg);
 }
 .gameCanvas{
 

@@ -27,7 +27,7 @@
 					<div class="two"><i class="fa fa-user"></i><h5>A known VITian</h5><div class="random"></div></div>
 				</div>
 			</div>
-			<div class="inputBatch box">
+			<div class="inputBatch box trans">
 				
 				<h3>Victim's batch code </h3>
 				<input type="text" id='batchCode'>
@@ -35,17 +35,17 @@
 				<div class="getBatch btn">Go</div>
 				
 			</div>
-			<div class="inputReg box">
+			<div class="inputReg box trans">
 				<h3>Enter victim's registration code</h3>
 				<input type="text" id='regCode'>
 				<p class="small">The full registration code: for example, 14MCA0020*.</p>
 				<div class="getInputReg btn">Go</div>
 			</div>
-			<div class="gameCanvas box">
+			<div class="gameCanvas box trans">
 				<!-- global input would be changed here... -->
 				<div class="hero"></div>
 			</div>
-			<div class="shareCanvas box">
+			<div class="shareCanvas box trans">
 				
 				
 				<h3>Your score is 256</h3>

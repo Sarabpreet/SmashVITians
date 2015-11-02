@@ -74,20 +74,24 @@ function share(){
 			// appendHero();
 			// Scount=0;
 			// count=0;
-			sc.style.display='none';
-			Scount=0;
-			count=0;
-			box[0].style.display='block';
+			// sc.style.display='none';
+			// Scount=0;
+			// count=0;
+			// box[0].style.display='block';
+			
+			window.location.reload();
 			});
 			sc.querySelector('.two').addEventListener('click',function(){
-			sc.style.display='none';
-			Scount=0;
-			count=0;
-			box[0].style.display='block';
+			// sc.style.display='none';
+			// Scount=0;
+			// count=0;
+			// box[0].style.display='block';
 
-			// reseting 
-				batchNo=0;
-				RegNo=0;
+			// // reseting 
+			// 	batchNo=0;
+			// 	RegNo=0;
+
+			window.location.reload();
 
 			});
 }
