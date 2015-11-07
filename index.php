@@ -25,7 +25,7 @@ else {
 																	$flag_score=true;
 											}
 											else {
-echo '<script>  </script>';
+echo '<script> window.location.reload(); </script>';
 }
 
 

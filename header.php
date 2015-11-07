@@ -9,8 +9,8 @@
 	<body>
 		
 		
-		<link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
-		<?php if($flag_score){
+<!-- 		<link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+ -->		<?php if($flag_score){
 		?>
 		<div class="info">
 			<!-- 	<p>Welcome <?php echo getClientName(); ?></p> -->
@@ -55,6 +55,8 @@
 					<div class="two"><i class="fa fa-share"></i><h5>Share Score</h5><div class="random"></div></div>
 				</div>
 			</div>
+
+			<div class="infoMeta"> <a href="sql/retrive.php">High Score</a> | <a href="clearcookie.php">Change Name</a> </div>
 			
 			<?php }
 			else if(isset($form)) {

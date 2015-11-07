@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Smash VITians</title>
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/font-awesome.css">
+	</head>
+	<body>
+		
+
+
 <?php
 
 
@@ -15,7 +27,7 @@
 
 								$sql = "SELECT * FROM game";
 								$result = mysqli_query($conn, $sql);
-
+								echo "<div class='box'>";
 								if (mysqli_num_rows($result) > 0) {
 								    // output data of each row
 								    while($row = mysqli_fetch_assoc($result)) {
@@ -25,6 +37,11 @@
 								} else {
 								    echo "0 results";
 								}
-
+								echo "</div>";	
 								mysqli_close($conn);
 ?>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>

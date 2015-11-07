@@ -1,240 +1,199 @@
 *{
-
 font-size: 16px;
 margin:0px;
 padding:0px;
 border: 0px;
 }
-
 body{
-
-    font-family: 'Press Start 2P', sans-serif;
-    background: url('../images/bg.png') no-repeat top center #6d4c6a;
+font-family: 'Press Start 2P', sans-serif;
+background: url('../images/bg.png') no-repeat top center #6d4c6a;
 }
-
 .trans{
-
-  -moz-transform: translateX(150px);
+-moz-transform: translateX(150px);
 -webkit-transform: translateX(150px);
 -o-transform: translateX(150px);
 -ms-transform: translateX(150px);
 transform: translateX(150px);
-
-
-
-  opacity:.4;
+opacity:.4;
 -webkit-transition: all 300000s ease;
 -moz-transition: all 3300000s ease;
 -ms-transition: all 300000s ease;
 -o-transition: all 300000s ease;
-
 background: yellow;
 }
-
-
 .trans:hover{
-
-  -moz-transform: translateX(0px);
+-moz-transform: translateX(0px);
 -webkit-transform: translateX(0px);
 -o-transform: translateX(0px);
 -ms-transform: translateX(0px);
 transform: translateX(0px);
-
-
 transition: all 1s ease;
 opacity: 1;
-
 }
 input{
-
-    display: block;
-    width: 40%;
-    height: 34px;
-    padding: 6px 12px;
-    font-size: 20px;
-    line-height: 1.42857;
-    color: #555;
-    background-color: #FFF;
-    background-image: none;
-    border: 1px solid #CCC;
-    border-radius: 4px;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
-    margin: 20px auto;
-    /*transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
-    */
+display: block;
+width: 40%;
+height: 34px;
+padding: 6px 12px;
+font-size: 20px;
+line-height: 1.42857;
+color: #555;
+background-color: #FFF;
+background-image: none;
+border: 1px solid #CCC;
+border-radius: 4px;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+margin: 20px auto;
+/*transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+*/
 }
 input[type=text] {
- 
-  
-  text-transform: capitalize;
-  
+
+
+text-transform: capitalize;
+
 }
-
 .ani {
-
 -moz-transform: rotate(360deg) translateX(20px) translateY(20px);
 -webkit-transform: rotate(360deg) translateX(20px) translateY(20px);
 -o-transform: rotate(360deg) translateX(20px) translateY(20px);
 -ms-transform: rotate(360deg) translateX(20px) translateY(20px);
 transform: rotate(360deg) translateX(20px) translateY(20px);
-
 }
 .gameCanvas{
-
 overflow: hidden;
-
 }
-
 .hero:hover {
-
 -webkit-box-shadow: 10px 20px 20px 2px #A3A3A3;
 box-shadow: 10px 20px 20px 2px #A3A3A3;
-
 }
 .hero {
-
-
-  background: url("https://academics.vit.ac.in/student/view_photo_2.asp?rgno=14MCA0037") white;
-  background-size: cover;
-  width:144px;
-  height:144px;
-  border-radius:72px;
-  position: relative;
-  cursor: pointer;
-  transition: all linear 200ms;
-  -webkit-box-shadow: 20px 20px 60px 2px #A3A3A3;
-  box-shadow: 20px 20px 60px 2px #A3A3A3;
-
-
+background: url("https://academics.vit.ac.in/student/view_photo_2.asp?rgno=14MCA0037") white;
+background-size: cover;
+width:144px;
+height:144px;
+border-radius:72px;
+position: relative;
+cursor: pointer;
+transition: all linear 200ms;
+-webkit-box-shadow: 20px 20px 60px 2px #A3A3A3;
+box-shadow: 20px 20px 60px 2px #A3A3A3;
 }
-
 .info {
+color: white;
+overflow: hidden;
+margin: 20px auto -18px;
+width: 55%;
+min-width: 900px;
 
-  color: white;
-  overflow: hidden;
-  margin: 20px auto -18px;
-  width: 55%;
-  min-width: 900px;
-  
 }
-
 .info p {
-  
-    font-size: 14px;
+
+font-size: 14px;
 }
 .left {
-
-  float:left;
+float:left;
+}
+.right {
+float: right;
+}
+.infoMeta {
+color: white;
+overflow: hidden;
+margin: 20px auto -18px;
+width: 55%;
+min-width: 900px;
 
 }
-
-
-.right {
-
-  float: right;
+.infoMeta a {
+color:white;
+text-decoration: none;
+letter-spacing: 1px;
+background:green;
+padding:20px 10px;
 }
 .box {
-  margin: 50px auto;
-  display: block;
-  width:50%;
-  height:500px;
-  background: url('../images/pattern.png') white;
-  padding:2%;
-  text-transform:uppercase;
-    text-align:center;
-    min-width: 900px;
-    -webkit-box-shadow: 0 0 0 20px #168BD9;
-  box-shadow: 0 0 0 20px #efc77e;
+margin: 50px auto;
+display: block;
+width:50%;
+height:500px;
+background: url('../images/pattern.png') white;
+padding:2%;
+text-transform:uppercase;
+text-align:center;
+min-width: 900px;
+
+box-shadow: 0 0 0 20px #efc77e;
+
+-webkit-box-shadow: 0 0 0 20px #efc77e;
 }
 .box h3 {
-  color:#fb792a;
-  margin: 60px 0px;
-  text-shadow: 2px 2px 0 #42BAFF;
-  font-size: 24px;
+color:#fb792a;
+margin: 60px 0px;
+text-shadow: 2px 2px 0 #42BAFF;
+font-size: 24px;
 }
-
 .box .options {
-  width: 60%;
-  margin: 20px auto;
-  text-align:center;
- 
+width: 60%;
+margin: 20px auto;
+text-align:center;
+
 }
-
-
-
 .box .one {
-  float:left;
-  cursor: pointer;
-
+float:left;
+cursor: pointer;
 }
-
-
-
 .box .two {
-  
-  cursor: pointer;
-  float: right;
-}
 
+cursor: pointer;
+float: right;
+}
 .chooseTarget i,.shareCanvas i {
-  
-  font-size:50px;
-  margin: 20px;
-  color: orange;
-  
-}
 
+font-size: 90px;
+margin: 60px -21px 10px;
+color: orange;
+
+}
 .chooseTarget i:hover,.shareCanvas i:hover {
-
-  color:darkorange;
-}
-
-h5 {
-  text-transform: uppercase;
-  font-size:.8em;
-}
-
-input.btn {
-  height: 40px;
-}
-
-.addOrange{
-
-color:orange;
-
-}
-
-.removeOrange{
-
 color:darkorange;
-
+}
+h5 {
+text-transform: uppercase;
+font-size:.8em;
+}
+input.btn {
+height: 40px;
+}
+.addOrange{
+color:orange;
+}
+.removeOrange{
+color:darkorange;
 }
 .btn {
-  background: url('../images/filter.png') purple;
-  width: 50px;
-  height: 20px;
-  padding:10px;
-  color: white;
-  margin: 0 auto;
-  cursor: pointer;
-  border-radius: 50px;
+background: url('../images/filter.png') purple;
+width: 50px;
+height: 20px;
+padding:10px;
+color: white;
+margin: 0 auto;
+cursor: pointer;
+border-radius: 50px;
 }
 .btn:hover {
-  
-  background: url('../images/filter.png') darkgoldenrod;
-  color:black;
-  
+
+background: url('../images/filter.png') darkgoldenrod;
+color:black;
+
 }
 p.small {
-  
-  font-size: 12px;
-  font-family: 'sans-serif';
-  margin:-10px 20px 20px;
-  text-transform: none;
+
+font-size: 12px;
+font-family: 'sans-serif';
+margin:-10px 20px 20px;
+text-transform: none;
 }
-
-
 .big {
-
-  font-size:60px;
+font-size:60px;
 }
