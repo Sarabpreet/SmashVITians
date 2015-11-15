@@ -205,11 +205,19 @@ color:black;
 }
 p.small {
 
-font-size: 12px;
+font-size: 14px;
 font-family: 'sans-serif';
 margin:-10px 20px 20px;
 text-transform: none;
 }
+
+.error{
+	padding:20px;
+	background: red;
+	color:white;
+	
+}
+
 .big {
 font-size:60px;
 }

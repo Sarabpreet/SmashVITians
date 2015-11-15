@@ -25,7 +25,7 @@
 									    die("Connection failed: " . $conn->connect_error);
 									}
 
-								$sql = "SELECT * FROM game";
+								$sql = "SELECT * FROM game ORDER BY score DESC";
 								$result = mysqli_query($conn, $sql);
 								echo "<div class='box'>";
 								if (mysqli_num_rows($result) > 0) {

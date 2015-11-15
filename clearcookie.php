@@ -18,7 +18,8 @@ setcookie('score','blah',time()-2);
 				<h3>Name Change Request Processed! </h3>
 				<div class="options">
 					
-					<div class="left">go back</div>
+					<div class="left"><a href=""></a>go back</div>
+					<?php var_dump($_SERVER); ?>
 					
 				</div>
 				</div>

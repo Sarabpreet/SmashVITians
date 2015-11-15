@@ -24,6 +24,7 @@ var invalid;
 var name=inf.querySelector('.left span').innerHTML;
 var pscore=inf.querySelector('.right span').innerHTML;
 var batchnum;
+var re;
 for (var i = 0; i < box.length; i++) {
 box[i].style.display='none';
 };
@@ -68,7 +69,7 @@ function share(){
 			postScore(name,Scount,batchnum);
 			}
 			else {
-			postScore(name,pscore);
+			postScore(name,pscore,batchnum);
 			}
 			sc.querySelector('.one').addEventListener('click',function(){
 			// appendHero();
@@ -78,8 +79,10 @@ function share(){
 			// Scount=0;
 			// count=0;
 			// box[0].style.display='block';
-			
+			RegNo='0';
+			batchNo='0';
 			window.location.reload();
+			
 			});
 			sc.querySelector('.two').addEventListener('click',function(){
 			// sc.style.display='none';
@@ -90,7 +93,8 @@ function share(){
 			// // reseting 
 			// 	batchNo=0;
 			// 	RegNo=0;
-
+			RegNo='0';
+			batchNo='0';
 			window.location.reload();
 
 			});
@@ -106,7 +110,9 @@ left.innerHTML='Time:'+count;
 if(batchNo!=='0') {
 var random=getRandomInt(10,99);
 batchnum=batchNo;
-console.log(batchNo);
+console.log("batchNo "+batchNo);
+console.log("batchnum "+batchnum);
+
 var regnum = batchnum+"00"+random;
 var finalurl='https://academics.vit.ac.in/student/view_photo_2.asp?rgno='+regnum;
 }
@@ -119,6 +125,7 @@ var finalurl='https://academics.vit.ac.in/student/view_photo_2.asp?rgno='+RegNo;
 }
 else {
 invalid=True;
+console.log("not true");
 }
 hero=box[3].querySelector('.hero');
 hero.style.top=getRandomInt(-40,390)+'px';
@@ -153,15 +160,52 @@ box[2].style.display='block';
 }
 function getBatchCode(){
 batchNo=box[1].querySelector('#batchCode').value;
+
+// for registration number
+re = /^(10|11|12|13|14|15|16)\w\w\w$/;  
+
+
+//var re = new RegExp("");
+console.log(batchNo);
+
+
+if(re.exec(batchNo)) {
+
 box[1].style.display='none';
 box[3].style.display='block';
 timefunk();
+box[1].querySelector('#batchCode').value="";
+}
+
+else {
+var small=document.querySelector('.small').innerHTML="<div class='error'>IN VALID, it must match a proper reg code for example (14MCA0039)</div>";
+console.log("na hoga beta tumse");
+box[1].querySelector('#batchCode').value="";
+}
+
+
+
 }
 function getRegCode(){
 RegNo=box[2].querySelector('#regCode').value;
+
+re=/^(10|11|12|13|14|15|16)\w\w\w\d\d\d\d$/;
+if(re.exec(RegNo)) {
+
 box[2].style.display='none';
 box[3].style.display='block';
 timefunk();
+box[1].querySelector('#batchCode').value="";
+}
+
+else {
+var small=document.querySelector('.inputReg .small').innerHTML="<div class='error'>IN VALID, it must match a proper reg code for example (14MCA0039)</div>";
+console.log("na hoga beta tumse");
+box[2].querySelector('#regCode').value="";
+}
+
+
+
 }
 function timefunk(){
 var tick=setInterval(a,600);
