@@ -32,8 +32,30 @@ box[i].style.display='none';
 box[0].style.display='block';
 box[0].querySelector('.one').addEventListener('click',one);
 box[0].querySelector('.two').addEventListener('click',two);
+
+
 box[1].querySelector('.getBatch').addEventListener('click',getBatchCode);
+
+
+
 document.querySelector('.getInputReg').addEventListener('click',getRegCode);
+
+document.querySelector('.getInputReg').addEventListener('keypress', function (e) {
+    var key = e.which || e.keyCode;
+    if (key === 13) { // 13 is enter
+      console.log("get input thingy");
+    }
+});
+
+
+// box[1].querySelector('.getBatch').addEventListener('keypress', function (e) {
+//     var key = e.which || e.keyCode;
+//     if (key === 13) { // 13 is enter
+//       console.log("get batch");
+//     }
+// });
+
+
 var hero=box[3].querySelector('.hero');
 hero.style.display='none';
 var Scount=0;

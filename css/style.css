@@ -38,11 +38,16 @@ text-transform: capitalize;
 
 }
 .ani {
--moz-transform: rotate(360deg) translateX(20px) translateY(20px);
--webkit-transform: rotate(360deg) translateX(20px) translateY(20px);
--o-transform: rotate(360deg) translateX(20px) translateY(20px);
--ms-transform: rotate(360deg) translateX(20px) translateY(20px);
-transform: rotate(360deg) translateX(20px) translateY(20px);
+
+/*-moz-transform: translateX(10px);
+-webkit-transform: translateX(10px);
+-o-transform: translateX(10px);
+-ms-transform: translateX(10px);
+transform: translateX(10px);*/
+
+background: url("http://doublecrossthebook.com/wp-content/themes/doublecross.com/img/bullet.png") white;
+background-size: cover;
+z-index: 3;
 }
 .gameCanvas{
 overflow: hidden;
@@ -50,18 +55,21 @@ overflow: hidden;
 .hero:hover {
 -webkit-box-shadow: 10px 20px 20px 2px #A3A3A3;
 box-shadow: 10px 20px 20px 2px #A3A3A3;
+opacity: 1;
 }
 .hero {
-background: url("https://academics.vit.ac.in/student/view_photo_2.asp?rgno=14MCA0037") white;
+background: url("https://academics.vit.ac.in/student/view_photo_2.asp?rgno=14MCA0037"), white;
 background-size: cover;
 width:144px;
 height:144px;
 border-radius:72px;
 position: relative;
 cursor: pointer;
+opacity: .9;
 transition: all linear 200ms;
 -webkit-box-shadow: 20px 20px 60px 2px #A3A3A3;
 box-shadow: 20px 20px 60px 2px #A3A3A3;
+z-index: 1;
 }
 .info {
 color: white;
@@ -93,7 +101,6 @@ min-width: 900px;
 color:white;
 text-decoration: none;
 letter-spacing: 1px;
-background:green;
 padding:20px 10px;
 }
 .box {
