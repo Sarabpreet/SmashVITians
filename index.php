@@ -54,7 +54,8 @@ if(isset($_COOKIE['name'])){
 return $_COOKIE['name'];
 }
 else {
-return 'Random one';
+unset($_POST['name']);
+unset($_POST['score']);
 
 }
 }
@@ -62,7 +63,7 @@ function getTopScore (){
 //functions that fetches data to get highest score in a minute.
 return 4;
 }
-echo "<a href='clearcookie.php'> Clear Cookies </a>";
+
 include 'header.php';
 include 'footer.php';
 ?>
