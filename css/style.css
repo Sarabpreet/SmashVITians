@@ -96,12 +96,15 @@ margin: 20px auto -18px;
 width: 55%;
 min-width: 900px;
 
+
 }
 .infoMeta a {
 color:white;
 text-decoration: none;
 letter-spacing: 1px;
 padding:20px 10px;
+font-size: .7em;
+
 }
 .box {
 margin: 50px auto;

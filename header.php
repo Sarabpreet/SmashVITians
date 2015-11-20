@@ -14,7 +14,8 @@
 		?>
 		<div class="info">
 			<!-- 	<p>Welcome <?php echo getClientName(); ?></p> -->
-			<p class="left">Name: <?php echo '<span>'.getClientName().'</span>';?> </p>
+			<p class="left">Name: <?php echo "<span class='infoMeta >".getClientName()." <a href='sql/retrive.php'>High Score</a> | <a href='clearcookie.php'>Change Name</a> </span>
+			 ";?> </p>
 			<p class="right">Highest Score: <?php  echo '<span>'.$clientScore.'</span>';?></p>
 		</div>
 		<div class="chooseTarget box trans">
@@ -56,7 +57,6 @@
 				</div>
 			</div>
 
-			<div class="infoMeta"> <a href="sql/retrive.php">High Score</a> | <a href="clearcookie.php">Change Name</a> </div>
 			
 			<?php }
 			else if(isset($form)) {

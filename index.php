@@ -54,8 +54,7 @@ if(isset($_COOKIE['name'])){
 return $_COOKIE['name'];
 }
 else {
-unset($_POST['name']);
-unset($_POST['score']);
+
 
 }
 }
