@@ -77,7 +77,8 @@ overflow: hidden;
 margin: 20px auto -18px;
 width: 55%;
 min-width: 900px;
-
+background: orange;
+	padding: 12px;
 }
 .info p {
 
@@ -95,6 +96,7 @@ overflow: hidden;
 margin: 20px auto -18px;
 width: 55%;
 min-width: 900px;
+	
 
 
 }
@@ -117,7 +119,7 @@ text-transform:uppercase;
 text-align:center;
 min-width: 900px;
 
-box-shadow: 0 0 0 20px #efc77e;
+box-shadow: 0 0 0 20px orange;
 
 -webkit-box-shadow: 0 0 0 20px #efc77e;
 
@@ -230,4 +232,17 @@ text-transform: none;
 
 .big {
 font-size:60px;
+}
+
+.retrive {
+	
+	overflow: scroll;
+	
+}
+
+.retri {
+	
+	text-align: left;
+	background: white;
+	padding: 10px;
 }

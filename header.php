@@ -14,8 +14,13 @@
 		?>
 		<div class="info">
 			<!-- 	<p>Welcome <?php echo getClientName(); ?></p> -->
-			<p class="left">Name: <?php echo "<span class='infoMeta >".getClientName()." <a href='sql/retrive.php'>High Score</a> | <a href='clearcookie.php'>Change Name</a> </span>
-			 ";?> </p>
+			<p class="left">Name: <?php echo "<span class='infoMeta' >". getClientName() ."</span>";?> 
+
+			<?php  echo "<a href='sql/retrive.php'>High Score</a> | <a href='clearcookie.php'>Change Name</a>";?>
+			</p>
+
+			<p></p>
+
 			<p class="right">Highest Score: <?php  echo '<span>'.$clientScore.'</span>';?></p>
 		</div>
 		<div class="chooseTarget box trans">
@@ -39,7 +44,7 @@
 			<div class="inputReg box trans">
 				<h3>Enter victim's registration code</h3>
 				<input type="text" id='regCode'>
-				<p class="small">The full registration code: for example, 14MCA0020*.</p>
+				<p class="small">The full registration code: for example, 14MCA0139*.</p>
 				<div class="getInputReg btn">Go</div>
 			</div>
 			<div class="gameCanvas box trans">
@@ -69,4 +74,4 @@
 					else {
 			include 'form.php';
 			}?>
-			<?php include 'fb.php'; ?>
+			<?php //include 'fb.php'; ?>
